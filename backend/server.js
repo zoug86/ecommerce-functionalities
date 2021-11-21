@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const products = require('./routes/products')
 
-// app.get('/', (req, res) => {
-//     res.send('Welcome to the Backend')
-// })
+app.get('/', (req, res) => {
+    res.send('Welcome to the Backend')
+})
 
 // Body parser
 app.use(express.json());
